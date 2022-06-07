@@ -198,19 +198,19 @@ div .cajaCosmiatria,
 }
 
 .Cosmiatria {
-    background-image: url(/img/cosmiatria.jpg);
+    background-image: url(../img/cosmiatria.jpg);
     background-size: cover;
     transform: skewX(-5deg);
 }
 
 .Maquillaje {
-    background-image: url(/img/Maquillajeok.jpg);
+    background-image: url(../img/Maquillajeok.jpg);
     background-size: cover;
     transform: skewX(-5deg);
 }
 
 .Cosmetologia {
-    background-image: url(/img/perfilado-de-cejas.jpg);
+    background-image: url(../img/perfilado-de-cejas.jpg);
     background-size: cover;
     transform: skewX(-5deg);
 }
