@@ -601,17 +601,22 @@ button:hover {
     .header {
         flex-direction: column;
         align-items: center;
+        width: 100vw;
+    }
+
+    .nav {
+        width: 100vw;
     }
 
     .header .logo img {
         width: 160px;
-        /* margin-left: 110px; */
         padding-bottom: 10px;
+        margin-left: 35px;
     }
 
     .header .menu {
         display: grid;
-        grid-template-columns: 48px 73px 94px 80px 50px;
+        grid-template-columns: 39px 63px 81px 70px 50px;
         margin-right: 38px;
     }
 
@@ -626,12 +631,20 @@ button:hover {
 
     /* --------tamaño 480px------INDEX-------------- */
 
+    .mainIndex {
+        width: 100vw;
+    }
+
     .index img {
         width: 280px;
         height: 160px;
     }
 
     /* ------tamaño 480px------SERVICIOS---------- */
+
+    .mainServicios {
+        width: 100vw;
+    }
 
     .servicios {
         flex-direction: column;
@@ -652,6 +665,10 @@ button:hover {
 
     /* ---tamaño 480px---cosmiatria-maquillaje-cosmetologia------ */
 
+    .mainCosmiatria {
+        width: 100vw;
+    }
+
     .seccionCosmiatria h3 {
         font-size: 17px;
     }
@@ -669,6 +686,10 @@ button:hover {
     }
 
     /* MAQUILLAJE */
+
+    .mainMaquillaje {
+        width: 100vw;
+    }
 
     .seccionMaquillaje h3 {
         font-size: 17px;
@@ -688,6 +709,10 @@ button:hover {
 
     /* COSMETOLOGIA */
 
+    .mainCosmetologia {
+        width: 100vw;
+    }
+
     .seccionCosmetologia h3 {
         font-size: 17px;
     }
@@ -705,6 +730,10 @@ button:hover {
     }
 
     /* ------tamaño 480px------PRODUCTOS---------- */
+
+    .mainProductos {
+        width: 100vw;
+    }
 
     .productos h3 {
         font-size: 18px;
@@ -751,6 +780,10 @@ button:hover {
 
     /* ------tamaño 480px------PREGUNTAS FRECUENTES---------- */
 
+    .mainPreguntas {
+        width: 100vw;
+    }
+
     .preguntasFrecuentes h2 {
         font-size: 17px;
         text-align: center;
@@ -768,6 +801,10 @@ button:hover {
     }
 
     /* ------tamaño 480px------CONTACTANOS---------- */
+
+    .mainContactanos {
+        width: 100vw;
+    }
 
     .contactanos h2 {
         font-size: 17px;
@@ -789,6 +826,10 @@ button:hover {
     }
 
     /* ------tamaño 480px------FOOTER---------- */
+
+    .footer {
+        width: 100vw;
+    }
 
     .footer .datosContacto {
         flex-direction: column;
