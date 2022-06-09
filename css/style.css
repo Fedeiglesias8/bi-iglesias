@@ -596,7 +596,7 @@ button:hover {
 }
 
 
-@media (max-width: 425px) {
+@media (max-width: 480px) {
 
     .header {
         flex-direction: column;
@@ -624,14 +624,14 @@ button:hover {
         font-size: 10px;
     }
 
-    /* --------tamaño 320px------INDEX-------------- */
+    /* --------tamaño 480px------INDEX-------------- */
 
     .index img {
         width: 280px;
         height: 160px;
     }
 
-    /* ------tamaño 320px------SERVICIOS---------- */
+    /* ------tamaño 480px------SERVICIOS---------- */
 
     .servicios {
         flex-direction: column;
@@ -650,7 +650,7 @@ button:hover {
         height: 230px;
     }
 
-    /* ---tamaño 320px---cosmiatria-maquillaje-cosmetologia------ */
+    /* ---tamaño 480px---cosmiatria-maquillaje-cosmetologia------ */
 
     .seccionCosmiatria h3 {
         font-size: 17px;
@@ -704,7 +704,7 @@ button:hover {
         font-size: 13px;
     }
 
-    /* ------tamaño 320px------PRODUCTOS---------- */
+    /* ------tamaño 480px------PRODUCTOS---------- */
 
     .productos h3 {
         font-size: 18px;
@@ -749,7 +749,7 @@ button:hover {
         font-size: 13px;
     }
 
-    /* ------tamaño 320px------PREGUNTAS FRECUENTES---------- */
+    /* ------tamaño 480px------PREGUNTAS FRECUENTES---------- */
 
     .preguntasFrecuentes h2 {
         font-size: 17px;
@@ -767,7 +767,7 @@ button:hover {
         margin-top: 15px;
     }
 
-    /* ------tamaño 320px------CONTACTANOS---------- */
+    /* ------tamaño 480px------CONTACTANOS---------- */
 
     .contactanos h2 {
         font-size: 17px;
@@ -788,7 +788,7 @@ button:hover {
         font-size: 13px;
     }
 
-    /* ------tamaño 320px------FOOTER---------- */
+    /* ------tamaño 480px------FOOTER---------- */
 
     .footer .datosContacto {
         flex-direction: column;
