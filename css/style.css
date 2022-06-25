@@ -78,14 +78,23 @@
 
 .datosContacto li {
     list-style: none;
-    padding: 15px;
     font-size: 35px;
 }
 
-.iconoWhatsapp a {
-    padding: 5px 250px;
-    border-left: solid 2px #000000;
+div .bordeIg {
     border-right: solid 2px #000000;
+    margin: 15px;
+    padding-right: 12rem;
+}
+
+div .bordeMp {
+    border-left: solid 2px #000000;
+    margin: 15px;
+    padding-left: 12rem;
+}
+
+div .bordeWp{
+    padding: 0 5rem;
 }
 
 /* ------------------index-------------------- */
@@ -349,7 +358,7 @@ div .cajaCosmiatria,
     padding: 25px;
 }
 
-.preguntasFrecuentes h2 {
+.preguntasFrecuentes h1 {
     background-color: #F8B4D4;
     border: solid 2px #000000;
     border-radius: 10px;
@@ -359,6 +368,7 @@ div .cajaCosmiatria,
 
 main div.cuadroPreguntas {
     margin-top: 20px;
+    margin-bottom: 40px;
     background-color: #F8B4D4;
     border: solid 2px #000000;
     border-radius: 10px;
@@ -369,6 +379,7 @@ main div.cuadroPreguntas {
 
 .cuadroPreguntas ul {
     padding-right: 40px;
+    max-width: 1000px;
 }
 
 .cuadroPreguntas ul li {
@@ -390,18 +401,27 @@ main div.cuadroPreguntas {
 }
 
 /* ------------------Contactanos-------------------- */
+.mainContactanos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .contactanos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px;
-}
-
-.contactanos h2 {
-    background-color: #F8B4D4;
+    width: 600px;
+    height: 510px;
     border: solid 2px #000000;
     border-radius: 10px;
-    padding: 8px;
+    margin: 40px;
+    background-color: #dddcdc75;
+    box-shadow: 0  1rem 1.5rem rgba(0, 0, 0, 0.600);
+}
+
+.contactanos h1 {
+    margin-top: 15px;
     font-style: italic;
 }
 
@@ -410,27 +430,32 @@ main div.cuadroPreguntas {
     height: 200px;
     border: solid 1px #000000;
     border-radius: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+    margin-top: 15px;
     resize: none;
     padding: 8px;
     font-size: 14px;
-    margin-top: 40px;
+    background-color: #F8B4D4;
+    text-align: center;
 }
 
 textarea:focus {
-    box-shadow: 0 4px 0 #F8B4D4;
     transform: scale(1.1);
 }
 
 .datosCompletar input {
+    background-color: #F8B4D4;
+    border: solid 1px #000000;
+    border-radius: 5px;
     margin-right: 15px;
     margin-bottom: 35px;
     padding: 5px;
     font-size: 14px;
+    width: 240px;
+    text-align: center;
 }
 
 input:focus {
-    box-shadow: 0 4px 0 #F8B4D4;
     transform: scale(1.1);
 }
 
@@ -438,10 +463,13 @@ input:focus {
     padding: 5px;
     transition: all 0.2s;
     font-size: 14px;
+    width: 500px;
+    border: solid 1px #000000;
+    border-radius: 5px;
+    background-color: #F8B4D4;
 }
 
 .contactanos button:hover {
-    box-shadow: 0 4px 0 #F8B4D4;
     transform: scale(1.1);
 }
 
@@ -485,7 +513,7 @@ input:focus {
 
     /* ------tamaño 768px------PREGUNTAS FRECUENTES---------- */
 
-    .preguntasFrecuentes h2 {
+    .preguntasFrecuentes h1 {
         font-size: 20px;
     }
 
@@ -500,10 +528,29 @@ input:focus {
 
     /* ------tamaño 768px------CONTACTANOS---------- */
 
-    .contactanos h2 {
-        text-align: center;
-        max-width: 600px;
-        font-size: 20px;
+    .contactanos{
+        width: 550px;
+        height: 510px;
+    }
+
+    .contactanos form textarea{
+        width: 480px;
+    }
+
+    textarea:focus {
+        transform: scale(1.05);
+    }
+
+    .datosCompletar input {
+        width: 230px;
+    }
+
+    .contactanos button {
+        width: 480px;
+    }
+
+    .contactanos button:hover {
+        transform: scale(1.05);
     }
 
     /* ------tamaño 768px------FOOTER---------- */
@@ -514,13 +561,15 @@ input:focus {
 
     .datosContacto li {
         font-size: 25px;
-        margin-right: 50px;
     }
 
-    .iconoWhatsapp a {
-        padding: 5px 150px;
+    div .bordeIg {
+        padding-right: 5rem;
     }
 
+    div .bordeMp {
+        padding-left: 5rem;
+    }
 }
     @media (max-width: 480px) {
 
@@ -723,7 +772,7 @@ input:focus {
             width: 100vw;
         }
 
-        .preguntasFrecuentes h2 {
+        .preguntasFrecuentes h1 {
             font-size: 17px;
             text-align: center;
         }
@@ -745,22 +794,25 @@ input:focus {
             width: 100vw;
         }
 
-        .contactanos h2 {
-            font-size: 17px;
+        .contactanos{
+            width: 280px;
+            height: 410px;
         }
-
-        .contactanos form textarea {
+    
+        .contactanos form textarea{
             width: 250px;
             height: 150px;
-            margin-bottom: 30px;
             font-size: 13px;
         }
-
+    
         .datosCompletar input {
-            font-size: 13px;
+            width: 115px;
+            font-size: 11px;
+            margin-right: 10px;
         }
-
+    
         .contactanos button {
+            width: 250px;
             font-size: 13px;
         }
 
@@ -777,10 +829,18 @@ input:focus {
 
         .datosContacto li {
             font-size: 25px;
-            margin-right: 25px;
+            margin-right: 35px;
+        }
+
+        div .bordeIg {
+            padding-right: 1rem;
         }
     
-        .iconoWhatsapp a {
-            padding: 5px 50px;
+        div .bordeMp {
+            padding-left: 3rem;
+        }
+
+        div .bordeWp{
+            padding: 15px 1rem 0 3rem; 
         }
     }
