@@ -64,16 +64,13 @@
 .footer {
     grid-area: footer;
     background-color: #F8B4D4;
-    font-weight: bold;
 }
 
 .datosContacto {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: flex-start;
     justify-content: space-around;
-    align-items: center;
+    margin-top: 15px;
 }
 
 .datosContacto li {
@@ -81,22 +78,14 @@
     font-size: 35px;
 }
 
-.iconoWhatsapp {
-    padding: 5px 250px;
-    border-left: solid 2px #000000;
+.bordeIg{
     border-right: solid 2px #000000;
-    margin: 15px;
-    padding-right: 12rem;
+    padding-right: 15rem;
 }
 
-div .bordeMp {
+.bordeMp{
     border-left: solid 2px #000000;
-    margin: 15px;
-    padding-left: 12rem;
-}
-
-div .bordeWp{
-    padding: 0 5rem;
+    padding-left: 15rem;
 }
 
 /* ------------------index-------------------- */
@@ -557,12 +546,8 @@ input:focus {
 
     /* ------tamaño 768px------FOOTER---------- */
 
-    .footer .datosContacto {
-        justify-content: center;
-    }
-
     .datosContacto li {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     div .bordeIg {
@@ -824,25 +809,17 @@ input:focus {
             width: 100vw;
         }
 
-        .footer .datosContacto {
-            justify-content: center;
-            align-items: flex-start;
-        }
-
         .datosContacto li {
             font-size: 25px;
-            margin-right: 35px;
+            margin-right: 2rem;
         }
 
         div .bordeIg {
-            padding-right: 1rem;
+            padding-right: 2rem;
         }
     
         div .bordeMp {
-            padding-left: 3rem;
+            padding-left: 2rem;
         }
 
-        div .bordeWp{
-            padding: 15px 1rem 0 3rem; 
-        }
     }
