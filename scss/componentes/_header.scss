@@ -1,0 +1,41 @@
+.header {
+    grid-area: header;
+    background-color: #F8B4D4;
+    font-weight: bold;
+
+    .logo {
+        img {
+            width: 190px;
+            margin: 20px;
+            margin-right: 100px;
+            transition: all 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .menu {
+        li {
+            list-style: none;
+            padding: 12px;
+            margin-right: 50px;
+
+            a {
+                color: #000000;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 15px;
+                font-style: italic;
+                padding-bottom: 2px;
+
+                &:hover{
+                    border-bottom: solid 2px #000000; 
+                    color: #000000;
+                }
+            }
+        }
+    }
+
+}
