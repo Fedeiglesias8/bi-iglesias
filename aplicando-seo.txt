@@ -1,0 +1,8 @@
+Para mejorar el seo realice las siguientes modificaciones:
+
+Agregue dos etiquetas "meta" una de keywords que están en todos los archivos menos en contactanos 
+y la segunda etiqueta es de descripción que está en el index y hace una breve descripción sobre la página.
+Sume "H1" y "title".
+Ordene todos los html menos el index dentro de una carpeta que se llama pages.
+Comprimi las imágenes.
+Y por último Agregue un sitemap.xml.
