@@ -8,14 +8,14 @@
   display: grid;
   grid-template-areas: "header" "main" "footer"; }
 
-.mainIndex .index section, .mainServicios .servicios .titulos {
+.mainIndex .index section, .mainServicios .servicios .titulos, .mainProductos .productos section, .mainPreguntas .preguntasFrecuentes h1, .mainPreguntas .preguntasFrecuentes .cuadroPreguntas, .mainContactanos .contactanos form textarea, .mainContactanos .contactanos form .datosCompletar input, .mainContactanos .contactanos form button, .mainCosmetologia .seccionCosmetologia h1, .mainCosmetologia .seccionCosmetologia section, .mainCosmiatria .seccionCosmiatria h1, .mainCosmiatria .seccionCosmiatria section, .mainMaquillaje .seccionMaquillaje h1, .mainMaquillaje .seccionMaquillaje section {
   background-color: #F8B4D4;
   border: solid #000000 2px;
   border-radius: 8px; }
 
-.mainIndex .index section, .mainServicios .servicios .titulos a {
+.mainIndex .index section, .mainServicios .servicios .titulos a, .mainPreguntas .preguntasFrecuentes h1, .mainPreguntas .preguntasFrecuentes .cuadroPreguntas ul p, .mainCosmetologia .seccionCosmetologia h1, .mainCosmiatria .seccionCosmiatria h1, .mainMaquillaje .seccionMaquillaje h1 {
   font-style: italic;
-  text-align: center; }
+  padding: 8px; }
 
 .mainServicios .servicios .imagenCosmiatria,
 .mainServicios .servicios .carousel-inner,
@@ -23,6 +23,12 @@
   border: solid 4px #e0cc56dc;
   border-radius: 18px;
   transform: skewX(-5deg); }
+
+.mainCosmetologia .seccionCosmetologia section div, .mainCosmiatria .seccionCosmiatria section div, .mainMaquillaje .seccionMaquillaje section div {
+  background-color: #ee8bb98e;
+  border: solid 1px #000000;
+  margin-left: 20px;
+  padding: 5px; }
 
 .header {
   grid-area: header;
@@ -80,7 +86,7 @@
     .mainIndex .index .indexFotos {
       margin-top: 15px; }
     .mainIndex .index section {
-      padding: 10px;
+      text-align: center;
       max-width: 850px;
       box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.6);
       margin-top: 40px; }
@@ -99,7 +105,7 @@
       flex-direction: column;
       align-items: center;
       margin-top: 30px;
-      margin-bottom: 30px; }
+      margin-bottom: 40px; }
     .mainServicios .servicios .titulos {
       padding: 10px;
       transition: all 0.3s;
@@ -112,3 +118,156 @@
         text-decoration: none; }
       .mainServicios .servicios .titulos:hover {
         transform: scale(1.15); }
+
+.mainProductos {
+  grid-area: main; }
+  .mainProductos .productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .mainProductos .productos section {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      padding: 15px;
+      color: #000000;
+      box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.6); }
+    .mainProductos .productos .card {
+      border: none;
+      background-color: #F8B4D4; }
+
+.mainPreguntas {
+  grid-area: main; }
+  .mainPreguntas .preguntasFrecuentes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px; }
+    .mainPreguntas .preguntasFrecuentes .cuadroPreguntas {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      padding: 8px;
+      text-decoration: none;
+      box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.6); }
+      .mainPreguntas .preguntasFrecuentes .cuadroPreguntas ul {
+        padding-right: 40px;
+        max-width: 1000px; }
+        .mainPreguntas .preguntasFrecuentes .cuadroPreguntas ul li {
+          display: inline-block;
+          font-size: 18px;
+          font-weight: bold;
+          border-bottom: solid 2px #000000;
+          text-decoration: none;
+          margin-top: 15px; }
+        .mainPreguntas .preguntasFrecuentes .cuadroPreguntas ul p {
+          font-size: 16px;
+          margin-top: 20px;
+          background-color: #ee8bb9ab;
+          border: solid 1px #000000; }
+
+.mainContactanos {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .mainContactanos .contactanos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 510px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: solid 2px #000000;
+    border-radius: 8px;
+    background-color: #dddcdc75;
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.6); }
+    .mainContactanos .contactanos h1 {
+      margin-top: 15px;
+      font-style: italic; }
+    .mainContactanos .contactanos form textarea {
+      margin-top: 15px;
+      margin-bottom: 35px;
+      width: 500px;
+      height: 200px;
+      resize: none;
+      padding: 8px;
+      font-size: 14px;
+      text-align: center; }
+      .mainContactanos .contactanos form textarea:focus {
+        transform: scale(1.1); }
+    .mainContactanos .contactanos form .datosCompletar input {
+      margin-right: 15px;
+      margin-bottom: 35px;
+      padding: 5px;
+      font-size: 14px;
+      width: 240px;
+      text-align: center; }
+      .mainContactanos .contactanos form .datosCompletar input:focus {
+        transform: scale(1.1); }
+    .mainContactanos .contactanos form button {
+      padding: 5px;
+      font-size: 14px;
+      width: 500px;
+      transition: all 0.2s; }
+      .mainContactanos .contactanos form button:hover {
+        transform: scale(1.1); }
+
+.mainCosmetologia {
+  grid-area: main; }
+  .mainCosmetologia .seccionCosmetologia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px; }
+    .mainCosmetologia .seccionCosmetologia section {
+      display: flex;
+      align-items: flex-start;
+      width: 620px;
+      margin-top: 40px;
+      padding: 15px;
+      box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.6); }
+      .mainCosmetologia .seccionCosmetologia section img {
+        height: 300px;
+        border: solid 1px #000000;
+        border-radius: 8px; }
+
+.mainCosmiatria {
+  grid-area: main; }
+  .mainCosmiatria .seccionCosmiatria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px; }
+    .mainCosmiatria .seccionCosmiatria section {
+      display: flex;
+      align-items: flex-start;
+      width: 620px;
+      margin-top: 40px;
+      padding: 15px;
+      box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.6); }
+      .mainCosmiatria .seccionCosmiatria section img {
+        height: 300px;
+        border: solid 1px #000000;
+        border-radius: 8px; }
+
+.mainMaquillaje {
+  grid-area: main; }
+  .mainMaquillaje .seccionMaquillaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px; }
+    .mainMaquillaje .seccionMaquillaje section {
+      display: flex;
+      align-items: flex-start;
+      width: 620px;
+      margin-top: 40px;
+      padding: 15px;
+      box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.6); }
+      .mainMaquillaje .seccionMaquillaje section img {
+        height: 300px;
+        border: solid 1px #000000;
+        border-radius: 8px; }

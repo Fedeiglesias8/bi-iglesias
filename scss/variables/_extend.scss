@@ -6,11 +6,18 @@
 
 %estiloTexto {
     font-style: italic;
-    text-align: center;
+    padding: 8px;
 }
 
 %estiloServicios {
     border: solid 4px #e0cc56dc;
     border-radius: 18px;
     transform: skewX(-5deg);
+}
+
+%cosmiatriaCosmetologiaMaquillaje {
+    background-color: #ee8bb98e;
+    border: solid 1px #000000;
+    margin-left: 20px;
+    padding: 5px;
 }

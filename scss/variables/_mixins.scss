@@ -2,3 +2,8 @@
     margin-top: $marginTop;
     margin-bottom: $marginBottom;
 }
+
+@mixin width-height ($width, $height){
+    width: $width;
+    height: $height;
+}

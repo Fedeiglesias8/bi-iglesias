@@ -1,0 +1,35 @@
+.mainMaquillaje{
+    grid-area: main;
+
+    .seccionMaquillaje {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include margin-top-bottom (30px, 40px);
+
+        h1 {
+            @extend %estiloCard;
+            @extend %estiloTexto;
+        }
+
+        section {
+            display: flex;
+            align-items: flex-start;
+            @extend %estiloCard;
+            width: 620px;
+            margin-top: 40px;
+            padding: 15px;
+            box-shadow: 0  1rem 1.5rem rgba(0, 0, 0, 0.600);
+
+            img {
+                height: 300px;
+                border: solid 1px #000000;
+                border-radius: 8px;
+            }
+
+            div {
+                @extend %cosmiatriaCosmetologiaMaquillaje;
+            }
+        }
+    }
+}
