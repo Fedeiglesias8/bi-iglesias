@@ -7,16 +7,59 @@
         align-items: center;
 
         section {
-            @include margin-top-bottom (40px, 40px);            
+            @include margin-top-bottom (40px, 40px);
             @extend %estiloCard;
             padding: 15px;
             color: #000000;
-            box-shadow: 0  1rem 1.5rem rgba(0, 0, 0, 0.600);
+            box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.600);
         }
 
         .card {
             border: none;
             background-color: #F8B4D4;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .mainProductos {
+        width: 100vw;
+
+        .productos {
+            section {
+                flex-direction: column;
+                align-items: center;
+                width: 250px;
+                padding: 8px;
+
+                .card-text {
+                    margin-left: 1px;
+                    font-size: 13px;
+                }
+            }
+            .mascarillas{
+                img {
+                    @include width-height (200px, 180px);
+                    margin-bottom: 15px;
+                    margin-left: 15px;
+                }
+            }
+
+            .emulsiones{
+                img {
+                    @include width-height (200px, 180px);
+                    margin-bottom: 15px;
+                    margin-left: 15px;
+                }
+            }
+
+            .suero{
+                img {
+                    height: 200px;
+                    margin-bottom: 15px;
+                    margin-left: 65px;
+                }
+            }
         }
     }
 }

@@ -12,7 +12,7 @@
         @include margin-top-bottom (40px, 40px);
         border: solid 2px #000000;
         border-radius: 8px;
-        background-color: #dddcdc75;
+        background-color: #b9b9b975;
         box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.600);
 
         h1 {
@@ -21,7 +21,7 @@
         }
 
         form {
-            textarea { 
+            textarea {
                 @extend %estiloCard;
                 @include margin-top-bottom (15px, 35px);
                 @include width-height (500px, 200px);
@@ -65,4 +65,68 @@
         }
     }
 
+}
+
+@media (max-width: 768px) {
+
+    .mainContactanos {
+        .contactanos {
+            @include width-height (550px, 510px);
+
+            form {
+                textarea {
+                    width: 480px;
+
+                    &:focus {
+                        transform: scale(1.05);
+                    }
+                }
+
+                button {
+                    width: 480px;
+
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+
+                .datosCompletar {
+                    input {
+                        width: 230px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+    .mainContactanos {
+        width: 100vw;
+
+        .contactanos {
+            @include width-height (280px, 410px);
+
+            form {
+                textarea {
+                    @include width-height (250px, 150px);
+                    font-size: 13px;
+                }
+
+                button {
+                    width: 250px;
+                    font-size: 13px;
+                }
+
+                .datosCompletar {
+                    input {
+                        width: 115px;
+                        font-size: 11px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
 }

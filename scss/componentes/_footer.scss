@@ -7,20 +7,61 @@
         flex-direction: row;
         justify-content: space-around;
         margin-top: 15px;
-    
+
         li {
             list-style: none;
-            font-size: 35px; 
+            font-size: 35px;
         }
 
-        .bordeIg{
+        .bordeIg {
             border-right: solid 2px #000000;
             padding-right: 15rem;
         }
-        
-        .bordeMp{
+
+        .bordeMp {
             border-left: solid 2px #000000;
             padding-left: 15rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .footer{
+        .datosContacto {
+            li {
+                font-size: 30px;
+
+            }
+
+            .bordeMp{
+                padding-left: 5rem;
+            }
+
+            .bordeIg{
+                padding-right: 5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px){
+
+    .footer{
+        .datosContacto {
+            width: 100vw;
+            li {
+                font-size: 25px;
+                margin-right: 2rem;
+            }
+
+            .bordeMp{
+                padding-left: 2rem;
+            }
+
+            .bordeIg{
+                padding-right: 2rem;
+            }
         }
     }
 }

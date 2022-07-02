@@ -7,7 +7,7 @@
         justify-content: space-around;
         align-items: center;
 
-        div .cajaCosmiatria,
+        .cajaCosmiatria,
         .cajaMaquillaje,
         .cajaCosmetologia {
             display: flex;
@@ -17,10 +17,13 @@
         }
 
         .titulos {
-            @extend %estiloCard;
-            padding: 10px;
+            background-image: linear-gradient(#F8B4D4, #fa64aa);
+            border: solid #000000 2px;
+            border-radius: 8px;
+            padding: 5px;
             transition: all 0.3s;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+            transform: skewX(-5deg);
 
             a {
                 list-style: none;
@@ -40,6 +43,55 @@
         .carousel-inner,
         .imagenCosmetologia {
             @extend %estiloServicios;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .mainServicios {
+        .servicios {
+            flex-direction: column;
+        }
+
+        .cajaCosmetologia,
+        .cajaCosmiatria,
+        .cajaMaquillaje {
+            img {
+
+                @include width-height (350px, 300px);
+            }
+
+            .titulos {
+                a {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .mainServicios {
+        .servicios {
+            width: 100vw;
+            flex-direction: column;
+        }
+
+        .cajaCosmetologia,
+        .cajaCosmiatria,
+        .cajaMaquillaje {
+            img {
+                @include width-height (275px, 255px);
+            }
+
+            .titulos {
+                padding: 4px;
+
+                a {
+                    font-size: 14px;
+                }
+            }
         }
     }
 }

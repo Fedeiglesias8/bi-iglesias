@@ -17,7 +17,7 @@
             @extend %estiloCard;
             padding: 8px;
             text-decoration: none;
-            box-shadow: 0  1rem 1.5rem rgba(0, 0, 0, 0.600);
+            box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.600);
 
             ul {
                 padding-right: 40px;
@@ -38,6 +38,54 @@
                     margin-top: 20px;
                     background-color: #ee8bb9ab;
                     border: solid 1px #000000;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .mainPreguntas {
+        h1 {
+            font-size: 20px;
+        }
+
+        .cuadroPreguntas {
+            ul {
+                li {
+                    font-size: 16.5px;
+                }
+
+                p {
+                    max-width: 600px;
+                    font-size: 14.5px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+    .mainPreguntas {
+        width: 100vw;
+
+        h1 {
+            font-size: 17px;
+            text-align: center;
+        }
+
+        .cuadroPreguntas {
+            max-width: 280px;
+            text-align: center;
+
+            ul {
+                li {
+                    font-size: 15.5px;
+                }
+
+                p {
+                    font-size: 13px;
                 }
             }
         }

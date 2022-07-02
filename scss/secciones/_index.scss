@@ -22,3 +22,31 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+
+    .mainIndex {
+        .index {
+            section {
+                max-width: 600px;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .mainIndex {
+        width: 100vw;
+
+        .index {
+            section {
+                max-width: 290px;
+                font-size: 13px;
+            }
+
+            img {
+                @include width-height (310px, 310px)
+            }
+        }
+    }
+}
