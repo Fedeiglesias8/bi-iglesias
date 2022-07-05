@@ -1,5 +1,6 @@
 .mainServicios {
     grid-area: main;
+    min-height: 85vh;
 
     .servicios {
         display: flex;
