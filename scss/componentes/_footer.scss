@@ -27,39 +27,40 @@
 
 @media (max-width: 768px) {
 
-    .footer{
+    .footer {
         .datosContacto {
             li {
                 font-size: 30px;
 
             }
 
-            .bordeMp{
+            .bordeMp {
                 padding-left: 5rem;
             }
 
-            .bordeIg{
+            .bordeIg {
                 padding-right: 5rem;
             }
         }
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
 
-    .footer{
+    .footer {
         .datosContacto {
             width: 100vw;
+
             li {
                 font-size: 25px;
                 margin-right: 2rem;
             }
 
-            .bordeMp{
+            .bordeMp {
                 padding-left: 2rem;
             }
 
-            .bordeIg{
+            .bordeIg {
                 padding-right: 2rem;
             }
         }

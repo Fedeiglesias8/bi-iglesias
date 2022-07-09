@@ -37,7 +37,8 @@
                     font-size: 13px;
                 }
             }
-            .mascarillas{
+
+            .mascarillas {
                 img {
                     @include width-height (200px, 180px);
                     margin-bottom: 15px;
@@ -45,7 +46,7 @@
                 }
             }
 
-            .emulsiones{
+            .emulsiones {
                 img {
                     @include width-height (200px, 180px);
                     margin-bottom: 15px;
@@ -53,7 +54,7 @@
                 }
             }
 
-            .suero{
+            .suero {
                 img {
                     height: 200px;
                     margin-bottom: 15px;

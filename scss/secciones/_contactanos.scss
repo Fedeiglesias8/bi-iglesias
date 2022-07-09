@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 85vh;
+    min-height: 80vh;
 
     .contactanos {
         display: flex;
@@ -104,10 +104,10 @@
 @media (max-width: 480px) {
 
     .mainContactanos {
-        width: 100vw;
 
         .contactanos {
             @include width-height (280px, 410px);
+            margin-top: 80px;
 
             form {
                 textarea {

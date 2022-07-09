@@ -14,7 +14,8 @@
 
         section {
             display: flex;
-            align-items: flex-start;
+            flex-direction: column;
+            align-items: center;
             @extend %estiloCard;
             width: 620px;
             margin-top: 40px;
@@ -22,9 +23,9 @@
             box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.600);
 
             img {
-                height: 300px;
                 border: solid 1px #000000;
                 border-radius: 8px;
+                margin-bottom: 20px;
             }
 
             div {
@@ -63,6 +64,14 @@
                 flex-direction: column;
                 align-items: center;
                 width: 250px;
+
+                .imagenLimpieza {
+                    height: 190px;
+                }
+
+                .imagenPeeling {
+                    height: 150px;
+                }
 
                 div {
                     margin-left: 1px;

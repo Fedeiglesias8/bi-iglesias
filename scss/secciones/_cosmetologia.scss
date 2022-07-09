@@ -1,4 +1,4 @@
-.mainCosmetologia{
+.mainCosmetologia {
     grid-area: main;
 
     .seccionCosmetologia {
@@ -14,17 +14,18 @@
 
         section {
             display: flex;
-            align-items: flex-start;
+            flex-direction: column;
+            align-items: center;
             @extend %estiloCard;
             width: 620px;
             margin-top: 40px;
             padding: 15px;
-            box-shadow: 0  1rem 1.5rem rgba(0, 0, 0, 0.600);
+            box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.600);
 
             img {
-                height: 300px;
                 border: solid 1px #000000;
                 border-radius: 8px;
+                margin-bottom: 20px;
             }
 
             div {
@@ -36,8 +37,8 @@
 
 @media (max-width: 768px) {
 
-    .mainCosmetologia  {
-        .seccionCosmetologia  {
+    .mainCosmetologia {
+        .seccionCosmetologia {
             section {
                 flex-direction: column;
                 align-items: center;
@@ -53,7 +54,7 @@
 
 @media (max-width: 480px) {
 
-    .mainCosmetologia  {
+    .mainCosmetologia {
         .seccionCosmetologia {
             h4 {
                 font-size: 17px;
@@ -63,6 +64,10 @@
                 flex-direction: column;
                 align-items: center;
                 width: 250px;
+
+                img {
+                    height: 90px;
+                }
 
                 div {
                     margin-left: 1px;

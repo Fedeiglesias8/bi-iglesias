@@ -1,9 +1,9 @@
-@mixin margin-top-bottom ($marginTop, $marginBottom){
+@mixin margin-top-bottom ($marginTop, $marginBottom) {
     margin-top: $marginTop;
     margin-bottom: $marginBottom;
 }
 
-@mixin width-height ($width, $height){
+@mixin width-height ($width, $height) {
     width: $width;
     height: $height;
 }

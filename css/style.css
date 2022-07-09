@@ -166,7 +166,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 30px;
+      margin-top: 40px;
       margin-bottom: 40px; }
     .mainServicios .servicios .titulos {
       background-image: linear-gradient(#F8B4D4, #fa64aa);
@@ -316,7 +316,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 85vh; }
+  min-height: 80vh; }
   .mainContactanos .contactanos {
     display: flex;
     flex-direction: column;
@@ -376,22 +376,21 @@
       width: 230px; } }
 
 @media (max-width: 480px) {
-  .mainContactanos {
-    width: 100vw; }
-    .mainContactanos .contactanos {
-      width: 280px;
-      height: 410px; }
-      .mainContactanos .contactanos form textarea {
-        width: 250px;
-        height: 150px;
-        font-size: 13px; }
-      .mainContactanos .contactanos form button {
-        width: 250px;
-        font-size: 13px; }
-      .mainContactanos .contactanos form .datosCompletar input {
-        width: 115px;
-        font-size: 11px;
-        margin-right: 10px; } }
+  .mainContactanos .contactanos {
+    width: 280px;
+    height: 410px;
+    margin-top: 80px; }
+    .mainContactanos .contactanos form textarea {
+      width: 250px;
+      height: 150px;
+      font-size: 13px; }
+    .mainContactanos .contactanos form button {
+      width: 250px;
+      font-size: 13px; }
+    .mainContactanos .contactanos form .datosCompletar input {
+      width: 115px;
+      font-size: 11px;
+      margin-right: 10px; } }
 
 .mainCosmetologia {
   grid-area: main; }
@@ -403,15 +402,16 @@
     margin-bottom: 40px; }
     .mainCosmetologia .seccionCosmetologia section {
       display: flex;
-      align-items: flex-start;
+      flex-direction: column;
+      align-items: center;
       width: 620px;
       margin-top: 40px;
       padding: 15px;
       box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.6); }
       .mainCosmetologia .seccionCosmetologia section img {
-        height: 300px;
         border: solid 1px #000000;
-        border-radius: 8px; }
+        border-radius: 8px;
+        margin-bottom: 20px; }
 
 @media (max-width: 768px) {
   .mainCosmetologia .seccionCosmetologia section {
@@ -428,6 +428,8 @@
     flex-direction: column;
     align-items: center;
     width: 250px; }
+    .mainCosmetologia .seccionCosmetologia section img {
+      height: 90px; }
     .mainCosmetologia .seccionCosmetologia section div {
       margin-left: 1px;
       margin-top: 15px;
@@ -443,15 +445,16 @@
     margin-bottom: 40px; }
     .mainCosmiatria .seccionCosmiatria section {
       display: flex;
-      align-items: flex-start;
+      flex-direction: column;
+      align-items: center;
       width: 620px;
       margin-top: 40px;
       padding: 15px;
       box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.6); }
       .mainCosmiatria .seccionCosmiatria section img {
-        height: 300px;
         border: solid 1px #000000;
-        border-radius: 8px; }
+        border-radius: 8px;
+        margin-bottom: 20px; }
 
 @media (max-width: 768px) {
   .mainCosmiatria .seccionCosmiatria section {
@@ -468,6 +471,10 @@
     flex-direction: column;
     align-items: center;
     width: 250px; }
+    .mainCosmiatria .seccionCosmiatria section .imagenLimpieza {
+      height: 190px; }
+    .mainCosmiatria .seccionCosmiatria section .imagenPeeling {
+      height: 150px; }
     .mainCosmiatria .seccionCosmiatria section div {
       margin-left: 1px;
       margin-top: 15px;
@@ -483,15 +490,16 @@
     margin-bottom: 40px; }
     .mainMaquillaje .seccionMaquillaje section {
       display: flex;
-      align-items: flex-start;
+      flex-direction: column;
+      align-items: center;
       width: 620px;
       margin-top: 40px;
       padding: 15px;
       box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.6); }
       .mainMaquillaje .seccionMaquillaje section img {
-        height: 300px;
         border: solid 1px #000000;
-        border-radius: 8px; }
+        border-radius: 8px;
+        margin-bottom: 20px; }
 
 @media (max-width: 768px) {
   .mainMaquillaje .seccionMaquillaje section {
@@ -508,6 +516,10 @@
     flex-direction: column;
     align-items: center;
     width: 250px; }
+    .mainMaquillaje .seccionMaquillaje section .imagenSocial {
+      height: 180px; }
+    .mainMaquillaje .seccionMaquillaje section .imagenArtistico {
+      height: 300px; }
     .mainMaquillaje .seccionMaquillaje section div {
       margin-left: 1px;
       margin-top: 15px;

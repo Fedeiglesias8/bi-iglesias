@@ -1,4 +1,4 @@
-.mainMaquillaje{
+.mainMaquillaje {
     grid-area: main;
 
     .seccionMaquillaje {
@@ -14,17 +14,18 @@
 
         section {
             display: flex;
-            align-items: flex-start;
+            flex-direction: column;
+            align-items: center;
             @extend %estiloCard;
             width: 620px;
             margin-top: 40px;
             padding: 15px;
-            box-shadow: 0  1rem 1.5rem rgba(0, 0, 0, 0.600);
+            box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.600);
 
             img {
-                height: 300px;
                 border: solid 1px #000000;
                 border-radius: 8px;
+                margin-bottom: 20px;
             }
 
             div {
@@ -36,7 +37,7 @@
 
 @media (max-width: 768px) {
 
-    .mainMaquillaje  {
+    .mainMaquillaje {
         .seccionMaquillaje {
             section {
                 flex-direction: column;
@@ -53,7 +54,7 @@
 
 @media (max-width: 480px) {
 
-    .mainMaquillaje  {
+    .mainMaquillaje {
         .seccionMaquillaje {
             h4 {
                 font-size: 17px;
@@ -63,6 +64,14 @@
                 flex-direction: column;
                 align-items: center;
                 width: 250px;
+
+                .imagenSocial {
+                    height: 180px;
+                }
+
+                .imagenArtistico {
+                    height: 300px;
+                }
 
                 div {
                     margin-left: 1px;
